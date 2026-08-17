@@ -53,14 +53,8 @@ dictionary_words
 ```
 ## Dictionary Dataset & Attribution
 
-The English-word dictionary used in this project was obtained from the open-source **[dwyl/english-words](https://github.com/dwyl/english-words)** repository.
+SmartSpell uses the open-source English-word dataset from **[dwyl/english-words](https://github.com/dwyl/english-words)**.
 
-**Source Repository:**  
-[https://github.com/dwyl/english-words](https://github.com/dwyl/english-words)
+The specific dataset used is **[words_alpha.txt](https://github.com/dwyl/english-words/blob/master/words_alpha.txt)**, which was imported into the `dictionary_words` table in the MySQL database.
 
-**Dataset Used:**  
-[https://github.com/dwyl/english-words/blob/master/words_alpha.txt](https://github.com/dwyl/english-words/blob/master/words_alpha.txt)
-
-The `words_alpha.txt` dataset was used as the source for populating the `dictionary_words` table in the MySQL database.
-
-**Credit:** The original English-word dataset is provided by the **[dwyl/english-words](https://github.com/dwyl/english-words)** project. This project uses the dataset as an external resource for academic and educational purposes and does not claim ownership of the original word dataset.
+**Credit:** The original dictionary dataset is provided by the **[dwyl/english-words](https://github.com/dwyl/english-words)** project. It is used in SmartSpell as an external resource for academic and educational purposes. The original dataset is not claimed as part of this project's original work.
