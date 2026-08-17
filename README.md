@@ -50,7 +50,7 @@ dictionary_words
 ├── id
 └── word
 
-
+```
 ## Dictionary Dataset & Attribution
 
 The English-word dictionary used in this project was obtained from the open-source **[dwyl/english-words](https://github.com/dwyl/english-words)** repository.
