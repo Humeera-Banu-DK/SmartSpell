@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #182230;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    height: 70px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #5368e8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #182230;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #5368e8;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #5368e8;
+}
+
+.hero p {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+
+/* =========================
+   CHECKER
+   ========================= */
+
+.checker-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.checker-card {
+    width: min(900px, 95%);
+    background: white;
+
+    padding: 32px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   INPUT HEADER
+   ========================= */
+
+.input-header,
+.status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.input-header h2,
+.status-row h2 {
+    font-size: 20px;
+}
+
+#wordCount {
+    color: #7b8794;
+    font-size: 14px;
+}
+
+
+/* =========================
+   TEXTAREA
+   ========================= */
+
+#textInput {
+    width: 100%;
+
+    resize: vertical;
+
+    min-height: 200px;
+
+    padding: 18px;
+
+    border: 1px solid #d9dee8;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    outline: none;
+}
+
+#textInput:focus {
+    border-color: #5368e8;
+
+    box-shadow:
+        0 0 0 3px rgba(
+            83,
+            104,
+            232,
+            0.12
+        );
+}
+
+
+/* =========================
+   SUGGESTIONS
+   ========================= */
+
+.suggestion-box {
+    display: none;
+
+    margin-top: 8px;
+
+    border: 1px solid #dfe3eb;
+
+    border-radius: 10px;
+
+    background: white;
+
+    box-shadow:
+        0 8px 25px rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+    overflow: hidden;
+}
+
+.suggestion-box.visible {
+    display: block;
+}
+
+.suggestion-title {
+    padding: 10px 14px;
+
+    font-size: 13px;
+
+    color: #6b7280;
+
+    background: #f8f9fc;
+
+    font-weight: bold;
+}
+
+#suggestions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    padding: 12px;
+}
+
+.suggestion-item {
+    border: 1px solid #d7ddf8;
+
+    background: #f1f3ff;
+
+    color: #4056d6;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.suggestion-item:hover {
+    background: #5368e8;
+
+    color: white;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.button-row {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.check-button {
+    flex: 1;
+
+    border: none;
+
+    background: #5368e8;
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.check-button:hover {
+    background: #4056d6;
+}
+
+.clear-button {
+    width: 100px;
+
+    border: none;
+
+    background: #eef0f5;
+
+    color: #374151;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background: #e1e4eb;
+}
+
+
+/* =========================
+   RESULT
+   ========================= */
+
+.status-row {
+    margin-top: 30px;
+}
+
+#status {
+    background: #e9f8ef;
+
+    color: #16834a;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.result-box {
+    min-height: 100px;
+
+    padding: 18px;
+
+    background: #f7f8fb;
+
+    border: 1px solid #e3e6ed;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.loading {
+    display: none;
+
+    margin-top: 10px;
+
+    color: #5368e8;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.about {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    color: #5f6b7a;
+}
+
+.about h2 {
+    color: #182230;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .checker-card {
+        padding: 20px;
+    }
+
+    .button-row {
+        flex-direction: column;
+    }
+
+    .clear-button {
+        width: 100%;
+    }
+}

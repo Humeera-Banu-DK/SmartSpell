@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SmartSpell</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Smart<span>Spell</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#checker">
+                Spell Checker
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero"
+             id="home">
+
+        <h1>
+            Write Smarter with
+            <span>SmartSpell</span>
+        </h1>
+
+        <p>
+            Enter your text below and let SmartSpell
+            check it against our dictionary.
+        </p>
+
+    </section>
+
+
+    <!-- SPELL CHECKER -->
+
+    <section class="checker-section"
+             id="checker">
+
+        <div class="checker-card">
+
+            <div class="input-header">
+
+                <h2>
+                    Enter Your Text
+                </h2>
+
+                <span id="wordCount">
+                    0 words
+                </span>
+
+            </div>
+
+
+            <textarea
+                id="textInput"
+                placeholder="Type your sentence here..."
+                rows="8"></textarea>
+
+
+            <!-- SUGGESTIONS -->
+
+            <div id="suggestionBox"
+                 class="suggestion-box">
+
+                <div class="suggestion-title">
+                    Suggestions
+                </div>
+
+                <div id="suggestions">
+                </div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="button-row">
+
+                <button
+                    id="checkButton"
+                    class="check-button">
+
+                    Check Spelling
+
+                </button>
+
+
+                <button
+                    id="clearButton"
+                    class="clear-button">
+
+                    Clear
+
+                </button>
+
+            </div>
+
+
+            <!-- STATUS -->
+
+            <div class="status-row">
+
+                <h2>
+                    Corrected Text
+                </h2>
+
+                <span id="status">
+                    Ready
+                </span>
+
+            </div>
+
+
+            <div id="result"
+                 class="result-box">
+
+                Your corrected text will appear here.
+
+            </div>
+
+
+            <div id="loading"
+                 class="loading">
+
+                Checking spelling...
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about"
+             id="about">
+
+        <h2>
+            About SmartSpell
+        </h2>
+
+        <p>
+            SmartSpell is a Java-based spell checking
+            application that uses a MySQL dictionary
+            and edit-distance-based spelling suggestions.
+        </p>
+
+    </section>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
